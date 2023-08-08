@@ -1,39 +1,132 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.calculator {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 400px;
+  margin: 0 auto;
+  height: 70vh;
 }
 
-.App-link {
-  color: #61dafb;
+.calculator__container {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "result result result result"
+    "clear negative rest divide"
+    "seven eight nine multiplyNum"
+    "four five six subtract"
+    "one two three add"
+    "cero cero comma total";
+  border: 1px solid var(--second-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.result {
+  grid-area: result;
+  background-color: var(--second-color);
+  color: #fff;
+  text-align: end;
+  font-size: 20px;
+  padding: 4px;
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+.clear {
+  grid-area: clear;
+  background-color: var(--first-color);
+}
+
+.negative {
+  grid-area: negative;
+  background-color: var(--first-color);
+}
+
+.rest {
+  grid-area: rest;
+  background-color: var(--first-color);
+}
+
+.divide {
+  grid-area: divide;
+  background-color: var(--third-color);
+}
+
+.seven {
+  grid-area: seven;
+  background-color: var(--first-color);
+}
+
+.eight {
+  grid-area: eight;
+  background-color: var(--first-color);
+}
+
+.nine {
+  grid-area: nine;
+  background-color: var(--first-color);
+}
+
+.multipyNum {
+  grid-area: multiplyNum;
+  background-color: var(--third-color);
+}
+
+.four {
+  grid-area: four;
+  background-color: var(--first-color);
+}
+
+.five {
+  grid-area: five;
+  background-color: var(--first-color);
+}
+
+.six {
+  grid-area: six;
+  background-color: var(--first-color);
+}
+
+.subtract {
+  grid-area: subtract;
+  background-color: var(--third-color);
+}
+
+.one {
+  grid-area: one;
+  background-color: var(--first-color);
+}
+
+.two {
+  grid-area: two;
+  background-color: var(--first-color);
+}
+
+.three {
+  grid-area: three;
+  background-color: var(--first-color);
+}
+
+.add {
+  grid-area: add;
+  background-color: var(--third-color);
+}
+
+.cero {
+  grid-area: cero;
+  background-color: var(--first-color);
+}
+
+.comma {
+  grid-area: comma;
+  background-color: var(--first-color);
+}
+
+.total {
+  grid-area: total;
+  background-color: var(--third-color);
+}
+
+.calculator__item {
+  border: 1px solid var(--second-color);
+  text-align: center;
+  padding: 6px;
+  font-size: 18px;
 }
