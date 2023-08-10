@@ -1,9 +1,10 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable max-len */
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Panel from './Panel';
 import calculate from '../logic/calculate';
 import Result from './Result';
+import ApiCall from './ApiCall';
 
 function Calculator() {
   const [value, setValue] = useState({
@@ -22,6 +23,7 @@ function Calculator() {
         <Result value={value.next || value.total || '0'} />
         <Panel clickHandle={handleClick} />
       </article>
+      <ApiCall />
     </section>
   );
 }
