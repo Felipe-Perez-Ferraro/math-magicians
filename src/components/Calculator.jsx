@@ -1,17 +1,9 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable max-len */
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Panel from './Panel';
 import calculate from '../logic/calculate';
-
-/* eslint-disable react/prop-types */
-function Result({ value }) {
-  return (
-    <>
-      <span className=" result">{value}</span>
-    </>
-  );
-}
+import Result from './Result';
 
 function Calculator() {
   const [value, setValue] = useState({
