@@ -17,12 +17,10 @@ function Calculator() {
   };
 
   return (
-    <section className="calculator">
-      <article className="calculator__container">
-        <Result value={value.next || value.total || '0'} />
-        <Panel clickHandle={handleClick} />
-      </article>
-    </section>
+    <article className="calculator__container">
+      <Result value={value.next || value.total || '0'} />
+      <Panel clickHandle={handleClick} />
+    </article>
   );
 }
 
