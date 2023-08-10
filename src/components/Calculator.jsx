@@ -1,13 +1,30 @@
-import React from 'react';
-import CalculatorItems from './CalculatorItems';
+/* eslint-disable max-len */
+import { useState } from 'react';
+import Panel from './Panel';
 
-function Calculator() {
+/* eslint-disable react/prop-types */
+function Result({ value }) {
   return (
-    <section className="calculator">
-      <article className="calculator__container">
-        <CalculatorItems />
+    <section>
+      <article>
+        <p>{value}</p>
       </article>
     </section>
+  );
+}
+
+function Calculator() {
+  const [value, setValue] = useState(0);
+
+  const valueHandleClick = (valueClick) => {
+    setValue(valueClick);
+  };
+
+  return (
+    <>
+      <Result value={value} />
+      <Panel valueClick={valueHandleClick} />
+    </>
   );
 }
 
