@@ -125,8 +125,17 @@
 }
 
 .calculator__item {
+  cursor: pointer;
   border: 1px solid var(--second-color);
   text-align: center;
   padding: 6px;
   font-size: 18px;
+}
+
+.gray:hover {
+  background-color: #adadad;
+}
+
+.orange:hover {
+  background-color: #e0720a;
 }
