@@ -1,7 +1,13 @@
 import React from 'react';
 
 function Loading() {
-  return <div className="calculator__loading">Loading Quote...</div>;
+  return (
+    <section className="loading__section">
+      <h2 className="loading__title">
+        Loading Quote...
+      </h2>
+    </section>
+  );
 }
 
 export default Loading;
