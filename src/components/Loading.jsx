@@ -1,9 +1,23 @@
 import React from 'react';
 
 function Loading() {
+  const styles = {
+    loading__section: {
+      height: 'calc(100vh - 70px)',
+      backgroundColor: 'var(--primary-color)',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    loading__title: {
+      color: 'var(--secondary-color)',
+      fontSize: '22px',
+    },
+  };
+
   return (
-    <section className="loading__section">
-      <h2 className="loading__title">Loading Quote...</h2>
+    <section style={styles.loading__section}>
+      <h2 style={styles.loading__title}>Loading Quote...</h2>
     </section>
   );
 }
