@@ -1,13 +1,9 @@
 /* eslint-disable react/jsx-one-expression-per-line */
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/no-array-index-key */
 import React, { useEffect, useState } from 'react';
 import Loading from '../components/Loading';
 
 function ApiCall() {
   const [quotes, setQuotes] = useState([]);
-  const [error, setError] = useState(false);
-
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -32,7 +28,7 @@ function ApiCall() {
         const data = await result.json();
         setQuotes(data);
       } catch (error) {
-        setError(true);
+        throw new Error(error);
       }
     };
     fetchApi();
@@ -45,8 +41,8 @@ function ApiCall() {
       ) : (
         <section className="calculator__quotes">
           <article className="quote__container">
-            {quotes.map((quote, index) => (
-              <div className="quote__feature__container" key={index}>
+            {quotes.map((quote) => (
+              <div className="quote__feature__container" key={quotes.length}>
                 <h2 className="calculator__quotes__title">
                   Author: {quote.author}
                 </h2>

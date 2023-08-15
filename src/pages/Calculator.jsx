@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable max-len */
 import { useState } from 'react';
 import Panel from '../components/Panel';
 import calculate from '../logic/calculate';

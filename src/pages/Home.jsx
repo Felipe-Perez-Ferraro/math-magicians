@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import React from 'react';
 
 function Home() {
@@ -32,10 +31,10 @@ function Home() {
             Welcome to our page!
           </h1>
           <p style={styles.home__paragraph}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni rerum porro officiis excepturi, est possimus hic, dolore inventore quia et mollitia dolores ad corrupti sed voluptas? Accusantium perspiciatis adipisci, incidunt quis quidem voluptatem ducimus nihil assumenda dolor, velit reiciendis, repellat illo nesciunt facere libero ex totam eum saepe inventore commodi.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni rerum porro officiis ex.
           </p>
           <p style={styles.home__paragraph}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni rerum porro officiis excepturi, est possimus hic, dolore inventore quia et mollitia dolores.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni rerum porro officiis ex.
           </p>
         </div>
       </article>
