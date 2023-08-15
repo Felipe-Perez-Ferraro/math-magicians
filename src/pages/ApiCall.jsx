@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-one-expression-per-line */
 import React, { useEffect, useState } from 'react';
 import Loading from '../components/Loading';
 
@@ -44,13 +43,16 @@ function ApiCall() {
             {quotes.map((quote) => (
               <div className="quote__feature__container" key={quotes.length}>
                 <h2 className="calculator__quotes__title">
-                  Author: {quote.author}
+                  Author:
+                  {quote.author}
                 </h2>
                 <p className="calculator__quotes__category">
-                  Category: {quote.category}
+                  Category:
+                  {quote.category}
                 </p>
                 <p className="calculator__quotes__quote">
-                  Quote: {quote.quote}
+                  Quote:
+                  {quote.quote}
                 </p>
               </div>
             ))}

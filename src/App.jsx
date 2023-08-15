@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import {
   BrowserRouter as Router,
   Route,
@@ -20,7 +19,6 @@ function App() {
   };
 
   useEffect(() => {
-    // Update active link based on window location
     const path = window.location.pathname;
     if (path === '/') {
       setActiveLink('home');
