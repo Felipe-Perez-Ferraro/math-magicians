@@ -11,4 +11,8 @@ body {
   --first-color: #d3d3d3;
   --second-color: #818181;
   --third-color: #ff9431;
+  --primary-color: #155263;
+  --secondary-color: #ff6f3c;
+  --tertiary-color: #ff9a3c;
+  --quaternary-color: #ffc93c;
 }

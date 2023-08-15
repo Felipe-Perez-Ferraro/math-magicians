@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function Panel({ clickHandle }) {
   const handleClick = (buttonName) => {
@@ -30,5 +30,9 @@ function Panel({ clickHandle }) {
     </>
   );
 }
+
+Panel.propTypes = {
+  clickHandle: PropTypes.string.isRequired,
+};
 
 export default Panel;
