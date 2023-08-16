@@ -1,38 +1,240 @@
-.App {
+/* Navbar styling */
+.navbar__section {
+  background-color: var(--secondary-color);
+}
+
+.navbar__section__container {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.navbar__title {
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+.nav__links__container {
+  display: flex;
+  gap: 15px;
+}
+
+.nav__link__item {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--primary-color);
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.nav__link__item:hover {
+  color: #fff;
+}
+
+.activeLink {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+/* Calculator styling */
+.calculator__section {
+  height: calc(100vh - 70px);
+  background-color: var(--primary-color);
+}
+
+.calculator__container {
+  padding-top: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.calculator__title {
+  color: var(--secondary-color);
+}
+
+.features__calculator__container {
+  display: grid;
+  grid-template-areas:
+    "result result result result"
+    "clear negative rest divide"
+    "seven eight nine multiplyNum"
+    "four five six subtract"
+    "one two three add"
+    "cero cero comma total";
+  border: 1px solid var(--second-color);
+  height: 70vh;
+  width: 56%;
+}
+
+.result {
+  grid-area: result;
+  background-color: var(--second-color);
+  color: #fff;
+  text-align: end;
+  font-size: 20px;
+  padding: 4px;
+}
+
+.clear {
+  grid-area: clear;
+  background-color: var(--first-color);
+}
+
+.negative {
+  grid-area: negative;
+  background-color: var(--first-color);
+}
+
+.rest {
+  grid-area: rest;
+  background-color: var(--first-color);
+}
+
+.divide {
+  grid-area: divide;
+  background-color: var(--third-color);
+}
+
+.seven {
+  grid-area: seven;
+  background-color: var(--first-color);
+}
+
+.eight {
+  grid-area: eight;
+  background-color: var(--first-color);
+}
+
+.nine {
+  grid-area: nine;
+  background-color: var(--first-color);
+}
+
+.multipyNum {
+  grid-area: multiplyNum;
+  background-color: var(--third-color);
+}
+
+.four {
+  grid-area: four;
+  background-color: var(--first-color);
+}
+
+.five {
+  grid-area: five;
+  background-color: var(--first-color);
+}
+
+.six {
+  grid-area: six;
+  background-color: var(--first-color);
+}
+
+.subtract {
+  grid-area: subtract;
+  background-color: var(--third-color);
+}
+
+.one {
+  grid-area: one;
+  background-color: var(--first-color);
+}
+
+.two {
+  grid-area: two;
+  background-color: var(--first-color);
+}
+
+.three {
+  grid-area: three;
+  background-color: var(--first-color);
+}
+
+.add {
+  grid-area: add;
+  background-color: var(--third-color);
+}
+
+.cero {
+  grid-area: cero;
+  background-color: var(--first-color);
+}
+
+.comma {
+  grid-area: comma;
+  background-color: var(--first-color);
+}
+
+.total {
+  grid-area: total;
+  background-color: var(--third-color);
+}
+
+.calculator__item {
+  cursor: pointer;
+  border: 1px solid var(--second-color);
   text-align: center;
+  padding: 6px;
+  font-size: 18px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.gray:hover {
+  background-color: #adadad;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.orange:hover {
+  background-color: #e0720a;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Quote styling */
+.calculator__quotes {
+  height: calc(100vh - 70px);
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator__loading {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.quote__feature__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.calculator__quotes__title {
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 32px;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calculator__quotes__category {
+  color: var(--tertiary-color);
+  font-size: 18px;
+}
+
+.calculator__quotes__quote {
+  color: var(--quaternary-color);
+  text-align: center;
+  font-size: 15px;
 }
