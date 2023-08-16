@@ -58,7 +58,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- No live demo yet
+- Link[https://math-magicians-3jh3.onrender.com/]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
